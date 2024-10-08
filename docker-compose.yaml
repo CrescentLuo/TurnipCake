@@ -1,0 +1,9 @@
+services:
+  turnipcake:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
